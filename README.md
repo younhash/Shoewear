@@ -14,7 +14,7 @@ You are **responsible** for attending squad standup at the begining and end of t
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Preparation and database in the backend | In progress ...
-|Day 2| Queries from frontend / frontend component creation | Incomplete
+|Day 2| CRUD Queries from frontend / frontend component creation | Incomplete
 |Day 3| All components should be working / debugging / CSS | Incomplete
 |Day 4| Styling | Incomplete
 |Day 5| Debug / MVP complete / Post MVP  | Incomplete
@@ -43,7 +43,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Database creation with 3 seeded tables 
 - Endpoint working from the backend
 - Render data from api
-- Queries code working at the frontend
+- CRUD queries code working at the frontend
 - All nine components created and working
 - Style
 - Deployment
