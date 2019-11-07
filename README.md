@@ -3,7 +3,7 @@ Get your pair of shoes
 
 # Project Overview
 
-This website allow users to shop, choosing shoes they like in our stock. they can view individual shoes for more info and buy if they sign in as a customer. No credit card but only cash after the shoes is delivered to the customer address.
+This is a shoe company where we sell one type of sneaker with different color and sizes.
 
 ## Project Schedule
 
@@ -24,7 +24,7 @@ You are **responsible** for attending squad standup at the begining and end of t
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+This website allow users to shop, choosing shoes they like in our stock. they can view individual shoes for more info and buy if they sign in as a customer. No credit card but only cash after the shoes is delivered to the customer address.
 
 ## Wireframes
 
