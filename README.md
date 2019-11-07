@@ -42,7 +42,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Database creation with 3 seeded tables 
 - Endpoint working from the backend
-- Endpoint working on the frontend
+- Render data from api
 - Queries code working at the frontend
 - All nine components created and working
 - Style
