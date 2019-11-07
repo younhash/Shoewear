@@ -89,12 +89,12 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Endpoint working from the backend | H | 3hrs| 0hrs |
 | Endpoint working on the frontend | H | 3hrs| 0hrs |
 | Queries code working at the frontend | H | 8hrs| 0hrs |
-| All nine components created and working | H | 3hrs| 0hrs |
+| All nine components created and working | H | 6hrs| 0hrs |
 | Debuging | H | 9hrs| 0hrs |
 | Style | H | 8hrs| 0hrs |
 | Search input | L | 2hrs| 0hrs |
 | Deployment | H | 2hrs| 0hrs |
-| Total | H | 41hrs| 0hrs | 
+| Total | H | 49hrs| 0hrs | 
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
