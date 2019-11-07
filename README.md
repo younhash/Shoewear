@@ -108,9 +108,7 @@ Helper functions should be generic enought that they can be reused in other appl
 | Capitalize | This will capitalize the first letter in a string of text | 
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
- 
- #### SAMPLE.....
+
 | Library | What it Does | 
 | --- | :---: |  
 | Bootstrap | I may use it for styling | 
