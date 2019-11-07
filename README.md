@@ -1,6 +1,3 @@
-# Shoewear
-Get your pair of shoes
-
 # Project Overview
 
 This is a shoe company where we sell one type of sneaker with different color and sizes.
