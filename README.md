@@ -14,7 +14,7 @@ You are **responsible** for attending squad standup at the begining and end of t
 |  Day | Deliverable | Status
 |---|---| ---|
 |Day 1| Preparation and database in the backend | In progress ...
-|Day 2| Queries from frontend / frontend component creation | Incomplete
+|Day 2| CRUD Queries from frontend / frontend component creation | Incomplete
 |Day 3| All components should be working / debugging / CSS | Incomplete
 |Day 4| Styling | Incomplete
 |Day 5| Debug / MVP complete / Post MVP  | Incomplete
@@ -28,11 +28,11 @@ This website allow users to shop, choosing shoes they like in our stock. they ca
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+[Wireframes](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/wireframe.jpeg)
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+[Prioty Matrix](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/proiority-matrix.jpeg)
 
 ### MVP/PostMVP - 5min
 
@@ -42,8 +42,8 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Database creation with 3 seeded tables 
 - Endpoint working from the backend
-- Endpoint working on the frontend
-- Queries code working at the frontend
+- Render data from api
+- CRUD queries code working at the frontend
 - All nine components created and working
 - Style
 - Deployment
@@ -52,13 +52,10 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - more style
 - Search input
-- Auth ?
 
 ## Architectural Design
 
-Define the the components and the architectural design of your app.
-
-#### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
+[Architectural Design](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/component-archit.jpeg)
 
 ## ERD
 
@@ -89,16 +86,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
 | Database creation with 3 seeded tables  | H | 3hrs| 0hrs |
-| Endpoint working from the backend | H | 2hrs| 0hrs |
-| Endpoint working on the frontend | H | 2hrs| 0hrs |
-| Queries code working at the frontend | H | 5hrs| 0hrs |
+| Endpoint working from the backend | H | 3hrs| 0hrs |
+| Endpoint working on the frontend | H | 3hrs| 0hrs |
+| Queries code working at the frontend | H | 8hrs| 0hrs |
 | All nine components created and working | H | 3hrs| 0hrs |
-| Debuging | H | 7hrs| 0hrs |
+| Debuging | H | 9hrs| 0hrs |
 | Style | H | 8hrs| 0hrs |
 | Search input | L | 2hrs| 0hrs |
-| auth | L | 3hrs| 0hrs |
 | Deployment | H | 2hrs| 0hrs |
-| Total | H | 37hrs| 0hrs | 
+| Total | H | 41hrs| 0hrs | 
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
