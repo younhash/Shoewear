@@ -3,6 +3,8 @@ Get your pair of shoes
 
 # Project Overview
 
+This website allow users to shop, choosing shoes they like in our stock. they can view individual shoes for more info and buy if they sign in as a customer. No credit card but only cash after the shoes is delivered to the customer address.
+
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
@@ -11,12 +13,12 @@ You are **responsible** for attending squad standup at the begining and end of t
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description | Incomplete
-|Day 2| Wireframes / Priority Matrix / Functional Components | Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Day 4| Pseudocode / actual code | Incomplete
-|Day 5| Initial Clickable Model  | Incomplete
-|Day 6| MVP | Incomplete
+|Day 1| Preparation and database in the backend | In progress ...
+|Day 2| Queries from frontend / frontend component creation | Incomplete
+|Day 3| All components should be working / debugging / CSS | Incomplete
+|Day 4| Styling | Incomplete
+|Day 5| Debug / MVP complete / Post MVP  | Incomplete
+|Day 6| Post MVP / Deployment | Incomplete
 |Day 7| Present | Incomplete
 
 
@@ -36,7 +38,6 @@ Include a full list of features that have been prioritized based on the `Time an
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### SAMPLE.....
 #### MVP 
 
 - Database creation with 3 seeded tables 
