@@ -85,7 +85,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Database creation with 3 seeded tables  | H | 8hrs| 0hrs |
 | Endpoint working from the backend | H | 3hrs| 0hrs |
 | Endpoint working on the frontend | H | 3hrs| 0hrs |
-| Queries code working at the frontend | H | 8hrs| 0hrs |
+| CRUD queries code working at the frontend | H | 8hrs| 0hrs |
 | All nine components created and working | H | 6hrs| 0hrs |
 | Debuging | H | 9hrs| 0hrs |
 | Style | H | 8hrs| 0hrs |
