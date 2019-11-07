@@ -32,7 +32,7 @@ This website allow users to shop, choosing shoes they like in our stock. they ca
 
 ## Priority Matrix
 
-[Prioty Matrix](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/priority-matrix.jpeg)
+[Prioty Matrix](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/proiority-matrix.jpeg)
 
 ### MVP/PostMVP - 5min
 
