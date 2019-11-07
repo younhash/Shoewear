@@ -28,7 +28,7 @@ This website allow users to shop, choosing shoes they like in our stock. they ca
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+[Wireframes](https://git.generalassemb.ly/younhash/Shoewear/blob/master/developer-mb/project2-images/wireframe.jpeg)
 
 ## Priority Matrix
 
