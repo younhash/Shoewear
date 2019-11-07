@@ -45,11 +45,13 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Queries code working at the frontend
 - All nine components created and working
 - Style
+- Deployment
 
 #### PostMVP 
 
 - more style
 - Search input
+- Auth ?
 
 ## Architectural Design
 
@@ -85,9 +87,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### SAMPLE.....
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs |
-| Total | H | 6hrs| 5hrs | 
+| Database creation with 3 seeded tables  | H | 3hrs| 0hrs |
+| Endpoint working from the backend | H | 2hrs| 0hrs |
+| Endpoint working on the frontend | H | 2hrs| 0hrs |
+| Queries code working at the frontend | H | 5hrs| 0hrs |
+| All nine components created and working | H | 3hrs| 0hrs |
+| Debuging | H | 7hrs| 0hrs |
+| Style | H | 8hrs| 0hrs |
+| Search input | L | 2hrs| 0hrs |
+| auth | H | 3hrs| 0hrs |
+| Deployment | H | 2hrs| 0hrs |
+| Total | H | 37hrs| 0hrs | 
 
 ## Helper Functions
 Helper functions should be generic enought that they can be reused in other applications. Use this section to document all helper functions that fall into this category.
@@ -103,8 +113,8 @@ Helper functions should be generic enought that they can be reused in other appl
  #### SAMPLE.....
 | Library | What it Does | 
 | --- | :---: |  
-| Bootstrap | Used to help style my application | 
-| Giphy API | Used to get gifs to use | 
+| Bootstrap | I may use it for styling | 
+| unspalash | I may use it for images | 
 
 
 ## Code Snippet
