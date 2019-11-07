@@ -96,7 +96,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Debuging | H | 7hrs| 0hrs |
 | Style | H | 8hrs| 0hrs |
 | Search input | L | 2hrs| 0hrs |
-| auth | H | 3hrs| 0hrs |
+| auth | L | 3hrs| 0hrs |
 | Deployment | H | 2hrs| 0hrs |
 | Total | H | 37hrs| 0hrs | 
 
