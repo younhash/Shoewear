@@ -54,7 +54,7 @@ Define the the components and the architectural design of your app.
 
 ## ERD
 
-Create the ERD model for your project
+https://www.lucidchart.com/documents/view/f783f92e-a953-448b-86a1-647353e57b72/0_0
 
 ## UI Components
 
