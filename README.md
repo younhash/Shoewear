@@ -32,7 +32,7 @@ This website allow users to shop, choosing shoes they like in our stock. they ca
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matix.  
+[Prioty Matrix](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/priority-matrix.jpeg)
 
 ### MVP/PostMVP - 5min
 
@@ -56,7 +56,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Architectural Design
 
-Define the the components and the architectural design of your app.
+[Architectural Design](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/component-archit.jpeg)
 
 #### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
 
