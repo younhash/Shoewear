@@ -39,12 +39,17 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 #### SAMPLE.....
 #### MVP 
 
-- Find and use external api 
-- Render data on page in a list
+- Database creation with 3 seeded tables 
+- Endpoint working from the backend
+- Endpoint working on the frontend
+- Queries code working at the frontend
+- All nine components created and working
+- Style
 
 #### PostMVP 
 
-- Add data to favorites section
+- more style
+- Search input
 
 ## Architectural Design
 
@@ -62,9 +67,17 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 #### SAMPLE.....
 | Component | Description | 
-| --- | :---: |  
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| --- | :---: |
+| App | This will render the header, main, footer | 
+| Header | This renders logo, hero-image, admin login, customer login, welcoming statement, search input | 
+| Main | This renders all components other than header and footer. Each or more component at specific time | 
+| AllProducts | This renders all products | 
+| ShowProduct | This renders clicked products with info | 
+| BuyProduct | This renders ProductReceipt compo. after create and send to order table in the db and deleted product | 
+| ProductReceipt | This renders message that product will be ship to customer address | 
+| CustomerLogin | This renders page where customer can just sign up or sign in and redirect to product page |
+| AdminLogin | This renders page where admin can see orders to date | 
+| Footer | This will render credits, year, location | 
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe.
