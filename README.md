@@ -28,7 +28,7 @@ This website allow users to shop, choosing shoes they like in our stock. they ca
 
 ## Wireframes
 
-[Wireframes](https://git.generalassemb.ly/younhash/Shoewear/blob/master/developer-mb/project2-images/wireframe.jpeg)
+[Wireframes](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/wireframe.jpeg)
 
 ## Priority Matrix
 
