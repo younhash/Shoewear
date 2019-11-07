@@ -58,8 +58,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 [Architectural Design](https://git.generalassemb.ly/younhash/Shoewear/tree/master/project-prep-images/component-archit.jpeg)
 
-#### [SAMPLE FROM A MAP BASED PROJECT](https://res.cloudinary.com/dvjtpejbw/image/upload/v1540221204/20181022_111216.jpg)
-
 ## ERD
 
 https://www.lucidchart.com/documents/view/f783f92e-a953-448b-86a1-647353e57b72/0_0
