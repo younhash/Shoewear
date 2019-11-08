@@ -10,8 +10,8 @@ You are **responsible** for attending squad standup at the begining and end of t
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Preparation and database in the backend | In progress ...
-|Day 2| CRUD Queries from frontend / frontend component creation | Incomplete
+|Day 1| Preparation and database in the backend | Complete 
+|Day 2| CRUD Queries from frontend / frontend component creation | In progress ...
 |Day 3| All components should be working / debugging / CSS | Incomplete
 |Day 4| Styling | Incomplete
 |Day 5| Debug / MVP complete / Post MVP  | Incomplete
