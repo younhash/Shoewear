@@ -73,7 +73,6 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | BuyProduct | This renders ProductReceipt compo. after create and send to order table in the db and deleted product | 
 | ProductReceipt | This renders message that product will be ship to customer address | 
 | CustomerLogin | This renders page where customer can just sign up or sign in and redirect to product page |
-| AdminLogin | This renders page where admin can see orders to date | 
 | Footer | This will render credits, year, location | 
 
 
