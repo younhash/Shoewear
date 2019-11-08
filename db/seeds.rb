@@ -16,3 +16,6 @@ Customer.create!(first_name: 'Ken',
                 last_name: 'lemon',
                 email: 'blueray@mna.com',
                 address: '123 main st' )
+
+# customer
+Order.create!(customer_id: 1, product_id: 1)

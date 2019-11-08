@@ -194,3 +194,43 @@ Processing by OrdersController#index as HTML
 Completed 200 OK in 130ms (Views: 2.8ms | ActiveRecord: 46.0ms | Allocations: 2599)
 
 
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Create (0.9ms)[0m  [1m[32mINSERT INTO "products" ("image", "name", "color", "size", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["image", "https://images.unsplash.com/photo-1499013819532-e4ff41b00669?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"], ["name", "shoe811"], ["color", "blue"], ["size", 11], ["price", 150], ["created_at", "2019-11-08 16:03:09.248281"], ["updated_at", "2019-11-08 16:03:09.248281"]]
+  [1m[35m (55.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Create (0.6ms)[0m  [1m[32mINSERT INTO "customers" ("first_name", "last_name", "email", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Ken"], ["last_name", "lemon"], ["email", "blueray@mna.com"], ["address", "123 main st"], ["created_at", "2019-11-08 16:03:09.323824"], ["updated_at", "2019-11-08 16:03:09.323824"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mOrder Create (95.4ms)[0m  [1m[32mINSERT INTO "orders" ("product_id", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["product_id", 1], ["customer_id", 1], ["created_at", "2019-11-08 16:03:09.425825"], ["updated_at", "2019-11-08 16:03:09.425825"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/orders" for ::1 at 2019-11-08 11:03:16 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 6.9ms | ActiveRecord: 4.2ms | Allocations: 3698)
+
+
+Started GET "/orders" for ::1 at 2019-11-08 11:04:45 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 881)
+
+
+Started GET "/orders" for ::1 at 2019-11-08 11:04:49 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (2.2ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 2.2ms | Allocations: 900)
+
+
+Started GET "/orders" for ::1 at 2019-11-08 11:05:01 -0500
+Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.7ms)[0m  [1m[34mSELECT "orders".* FROM "orders"[0m
+  ↳ app/controllers/orders_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.7ms | Allocations: 881)
+
+
