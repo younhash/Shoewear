@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Main from './Main';
+import ShowProduct from './ShowProduct';
 
 class AllProducts extends Component {
 
-componentDidMount() {
-    this.props.getAllProducts()
-}
+    constructor(props){
+        super(props)
+        this.state = {
+            // products: []
+        };
+    }
+
+// componentDidMount() {
+//     this.props.getAllProducts
+// }
 
 render() {
   return this.props.products.map(product => (
@@ -14,6 +23,7 @@ render() {
         {product.name} <br/>
         {product.color} <br/>
         {product.size} <br/>
+        <Link to={`/products/${product.id}`} > View </Link>
         <hr />
       </div>
     ))
