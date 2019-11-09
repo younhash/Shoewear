@@ -10,7 +10,6 @@ componentDidMount() {
 render() {
   return this.props.products.map(product => (
       <div key={product.id}>
-        <Link to={`/products/${product.id}`} onClick={() => this.props.product}> View </Link>
         <img src={product.image} width="200" alt={product.name} /> <br/>
         {product.name} <br/>
         {product.color} <br/>

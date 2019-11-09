@@ -1,0 +1,1 @@
+        {/* <Link to={`/products/${product.id}`} onClick={() => this.props.product}> View </Link> */}
