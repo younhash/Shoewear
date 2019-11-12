@@ -4,6 +4,8 @@ import axios from "axios";
 import AllProducts from "./components/AllProducts";
 import ShowProduct from "./components/ShowProduct";
 import Main from "./components/Main";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 import "./App.css";
@@ -44,9 +46,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Link exact="true" to="/">
-                home
-              </Link> */}
+        <Header />
         <Main 
           getAllProducts={this.getAllProducts}
           products={this.state.products}
@@ -57,6 +57,7 @@ class App extends Component {
           setProduct={this.setProduct}
           handleDeleteProduct={this.handleDeleteProduct}
         />
+        <Footer />
       </div>
     );
   }
