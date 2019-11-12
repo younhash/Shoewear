@@ -6,7 +6,7 @@ import ShowProduct from "./components/ShowProduct";
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import customer from "./components/Customer";
 
 import "./App.css";
 
@@ -16,7 +16,10 @@ class App extends Component {
     this.state = {
       products: [],
       currentProduct: {},
-      productsLoaded: false
+      productsLoaded: false,
+      customers: [],
+      currentCustomer: {},
+      customersLoaded: false
     };
   }
  
@@ -26,6 +29,15 @@ class App extends Component {
       this.setState({
         products: jsonRes.data,
         productsLoaded: true
+      });
+    });
+  };
+
+  getAllCustomers = () => {
+    axios.get("http://localhost:3000/customers").then(jsonRes => {
+      this.setState({
+        customers: jsonRes.data,
+        customersLoaded: true
       });
     });
   };
@@ -43,6 +55,13 @@ class App extends Component {
     console.log(this.state.currentProduct);
   };
 
+  setCustomer = (customer) => {
+    this.setState({
+      currentCustomer: customer
+    });
+    console.log(this.state.currentCustomer);
+  };
+
   render() {
     return (
       <div className="App">
@@ -56,6 +75,12 @@ class App extends Component {
           currentProduct={this.state.currentProduct}
           setProduct={this.setProduct}
           handleDeleteProduct={this.handleDeleteProduct}
+
+          getAllCustomers={this.getAllCustomers}
+          customers={this.state.customers}
+          customersLoaded={this.state.customersLoaded}
+          currentCustomer={this.state.currentCustomer}
+          setCustomer={this.setCustomer}
         />
         <Footer />
       </div>

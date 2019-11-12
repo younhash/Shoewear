@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 // import axios from "axios";
 import AllProducts from "./AllProducts";
 import ShowProduct from './ShowProduct';
+import Customer from './Customer';
 
 
 class Main extends Component {
@@ -18,6 +19,7 @@ class Main extends Component {
 
     render() {
         console.log(this.props.products);
+        console.log(this.props.customers);
         return (
             <Router>
             <div className="">           
@@ -41,6 +43,18 @@ class Main extends Component {
                       products={this.props.products}
                       productsLoaded={this.props.productsLoaded}
                       setProduct={this.setProduct}
+                    />
+                  )}
+                />
+                <Route
+                  exact
+                  path="/customers"
+                  render={() => (
+                    <Customer
+                        getAllCustomers={this.props.getAllCustomers}
+                        customers={this.props.customers}
+                        currentCustomer={this.props.currentCustomer}
+                        setCustomer={this.props.setCustomer}
                     />
                   )}
                 />

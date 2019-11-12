@@ -11,9 +11,7 @@ class Header extends Component {
     render() {
         // const product = this.props.currentProduct
         // console.log(product);
-        
         return (
-            
           <div>
             <h2>Footer</h2>
             <p>Good bye !</p>
