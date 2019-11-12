@@ -1,42 +1,62 @@
 import React, { Component } from "react";
-import "./App.css";
-import Main from "./components/Main";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import axios from "axios";
+import AllProducts from "./components/AllProducts";
+import ShowProduct from "./components/ShowProduct";
+import Main from "./components/Main";
+
+
+import "./App.css";
 
 class App extends Component {
-
   constructor(props){
     super()
     this.state = {
-      products: []
+      products: [],
+      currentProduct: {},
+      productsLoaded: false
     };
   }
-  
-  // getAllProducts = () => {
-  //   axios.get("http://localhost:3000/products").then(json => {
-  //     this.setState({
-  //       products: json.data       
-  //     });
-  //     console.log(this.state.products);
-  //   });
-  // };
+ 
 
-  async componentDidMount() {
-    await axios.get("http://localhost:3000/products").then(json => {
+  getAllProducts = () => {
+    axios.get("http://localhost:3000/products").then(jsonRes => {
       this.setState({
-        products: json.data       
+        products: jsonRes.data,
+        productsLoaded: true
       });
-      console.log(this.state.products);
     });
+  };
+
+  handleDeleteProduct = (removedProduct)=> {
+      this.setState({
+        products: this.state.products.filter(product => product.id !== removedProduct.id)
+      })
   }
 
+  setProduct = (product) => {
+    this.setState({
+      currentProduct: product
+    });
+    console.log(this.state.currentProduct);
+  };
+
   render() {
-    
-    console.log(this.state.products);
     return (
       <div className="App">
-         {/* getAllProducts={this.state.getAllProducts} */}
-         <Main products={this.state.products} />
+        {/* <Link exact="true" to="/">
+                home
+              </Link> */}
+        <Main 
+          getAllProducts={this.getAllProducts}
+          products={this.state.products}
+          productsLoaded={this.state.productsLoaded}
+          setProduct={this.setProduct}
+
+          currentProduct={this.state.currentProduct}
+          setProduct={this.setProduct}
+          handleDeleteProduct={this.handleDeleteProduct}
+        />
       </div>
     );
   }

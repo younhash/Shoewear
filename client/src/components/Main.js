@@ -1,57 +1,47 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import axios from "axios";
-import ShowProduct from "./ShowProduct";
+// import axios from "axios";
 import AllProducts from "./AllProducts";
+import ShowProduct from './ShowProduct';
 
 
 class Main extends Component {
     constructor(props){
         super()
-        this.state = {
-        //   products: []
-        };
       }
     // componentDidMount() {
-    //     // this.props.getAllProducts
-    //     this.setState=({
+        // this.props.getAllProducts
+        // this.setState=({
 
-    //     })
+        // })
     // }
-
-
-
-  // viewProduct = () => {
-  //   // const id = this.props.match.params.id
-  //     axios.get("http://localhost:3000/teachers/" + 1)
-  // }
 
     render() {
         console.log(this.props.products);
         return (
             <Router>
-            <div className="">
-              <Link to="/products">products </Link>
-              <Link to="/products/:id">linkmain</Link>
-
-              <Switch>
-                {/* All product route */}
-                <Route exact path="/products"
+            <div className="">           
+              <Switch>       
+                <Route
+                  exact
+                  path="/products/:id"
+                  render={(props) => <ShowProduct 
+                    currentProduct={this.props.currentProduct}
+                    setProduct={this.props.setProduct}
+                    handleDeleteProduct={this.props.handleDeleteProduct}
+                    {...props}
+                    />}
+                />
+                <Route
+                  exact
+                  path="/products"
                   render={() => (
                     <AllProducts
-                    // getAllProducts={this.getAllProducts}
+                      getAllProducts={this.props.getAllProducts}
                       products={this.props.products}
+                      productsLoaded={this.props.productsLoaded}
+                      setProduct={this.setProduct}
                     />
-                  )}
-                />
-                {/* show */}
-                <Route exact
-                  path="/products/:id"
-                  render={(props) => (
-                  <ShowProduct
-                    products={this.state.products}
-                    // viewProduct={this.viewProduct}
-                  />
                   )}
                 />
               </Switch>
