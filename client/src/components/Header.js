@@ -22,7 +22,9 @@ class Header extends Component {
                 </Link>
             </Router>
             <h3>Header</h3>
-            <p>Sign in</p>
+            <Router>
+            <Link to={'/customers/new'} > Sign in </Link>
+            </Router>
           </div>
         )
     }
