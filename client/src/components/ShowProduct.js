@@ -12,10 +12,11 @@ class ShowProduct extends Component {
     } 
   }
 
-   handleDelete = async ()=>{
+   handleTransaction = async ()=>{
+    // await axios.post('http://localhost:3000/orders/' + )
     await axios.delete('http://localhost:3000/products/' +  this.props.currentProduct.id)
     this.props.handleDeleteProduct(this.props.currentProduct)
-    this.props.history.push('/')
+    this.props.history.push('/products')
   }
 
   render() {
@@ -26,7 +27,7 @@ class ShowProduct extends Component {
       <div>
         <h1>{product.name}</h1>
         <img src={product.image} alt={product.name} />
-        <button onClick={this.handleDelete}> delete!!!</button>
+        <button onClick={this.handleTransaction}><h2>Buy</h2></button>
       </div>
     )
     }

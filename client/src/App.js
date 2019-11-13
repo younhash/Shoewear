@@ -43,9 +43,9 @@ class App extends Component {
   };
 
   handleDeleteProduct = (removedProduct)=> {
-      this.setState({
-        products: this.state.products.filter(product => product.id !== removedProduct.id)
-      })
+    this.setState({
+      products: this.state.products.filter(product => product.id !== removedProduct.id)
+    })
   }
 
   setProduct = (product) => {
