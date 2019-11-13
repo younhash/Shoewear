@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import CustomerForm from './CustomerForm';
 
 class Customer extends Component {
 
@@ -10,12 +11,15 @@ class Customer extends Component {
     }
 
     render() {
-        return this.props.customers.map(customer => (
-            <div key={customer.id}>
-              <p>{customer.email}</p>
-              <hr />
-            </div>
-          ))
-        }
+        return <div>
+            {/* <CustomerForm /> */}
+        </div> 
+        // return this.props.customers.map(customer => (
+        //     <div key={customer.id}>
+        //       <p>{customer.email}</p>
+        //       <hr />
+        //     </div>
+        //   ))
+    }
 }
 export default Customer;
