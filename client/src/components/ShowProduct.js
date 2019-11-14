@@ -38,7 +38,7 @@ class ShowProduct extends Component {
       <div>
         <h1>{product.name}</h1>
         <img src={product.image} alt={product.name} />
-        <button onClick={this.handleTransaction}><h2>Buy</h2></button>
+        <button onClick={this.handleTransaction}><h1>Buy</h1></button>
         {/* {!this.props.currentCustomer.hasOwnProperty('id') ? (
             <button onClick={this.goForm}> Sign up to proceed</button>
         ) : (

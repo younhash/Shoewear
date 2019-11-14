@@ -12,12 +12,9 @@ import CustomerReceipt from './CustomerReceipt';
 class Main extends Component {
     constructor(props){
         super()
-      }
+    }
     // componentDidMount() {
-        // this.props.getAllProducts
-        // this.setState=({
-
-        // })
+    //   this.props.getAllProducts
     // }
 
     render() {
@@ -25,8 +22,23 @@ class Main extends Component {
         console.log(this.props.customers);
         return (
             <Router>
-            <div className="">           
-              <Switch>       
+            <div className="">
+            <Link exact="true" to="/products">
+            products
+          </Link>      
+              <Switch>
+                <Route
+                  exact
+                  path="/"
+                  render={() => (
+                    <AllProducts
+                      getAllProducts={this.props.getAllProducts}
+                      products={this.props.products}
+                      productsLoaded={this.props.productsLoaded}
+                      setProduct={this.props.setProduct}
+                    />
+                  )}
+                />       
                 <Route
                   exact
                   path="/products/:id"
