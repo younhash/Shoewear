@@ -59,7 +59,7 @@ class App extends Component {
     this.setState({
       currentCustomer: customer
     });
-    console.log(this.state.currentCustomer);
+    console.log(customer);
   };
 
   render() {

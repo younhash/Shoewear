@@ -14,6 +14,10 @@ class Customer extends Component {
         return <div>
             <CustomerForm />
         </div> 
+
+        // return <div>
+        //     <CustomerReceipt />
+        // </div> 
         // return this.props.customers.map(customer => (
         //     <div key={customer.id}>
         //       <p>{customer.email}</p>

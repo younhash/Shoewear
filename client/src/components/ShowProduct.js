@@ -25,9 +25,9 @@ class ShowProduct extends Component {
     // console.log(this.props.currentCustomer);
     
     // await axios.post('http://localhost:3000/orders/' + )
-    await axios.delete('http://localhost:3000/products/' +  this.props.currentProduct.id)
-    this.props.handleDeleteProduct(this.props.currentProduct)
-    this.props.history.push('/CustomerReceipt/')
+    // await axios.delete('http://localhost:3000/products/' +  this.props.currentProduct.id)
+    // this.props.handleDeleteProduct(this.props.currentProduct)
+    this.props.history.push('/customers/new')
   }
 
   render() {

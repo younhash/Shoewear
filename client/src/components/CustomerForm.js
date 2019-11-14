@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import axios from 'axios'
+import CustomerReceipt from './CustomerReceipt'
 
 class CustomerForm extends Component {
     state = {
@@ -38,20 +39,24 @@ class CustomerForm extends Component {
 
     onSubmit = async (e) => {
         e.preventDefault()
-        const id = this.props.match.params.id
-        const res = this.props.isUpDateForm ?
-        await axios.put(`http://localhost:3000/customers/${id}`, this.state) :
-        await axios.post(`http://localhost:3000/customers/`, this.state)
+        // const params = this.props.match && this.props.match.params;
+        // if (params) {
+        const res = await axios.post(`http://localhost:3000/customers/`, this.state)
 
-        const customer = res.data.customer
+        const customer = res.data
         this.props.setCustomer(customer)
-        // <Redirect to="home" />
-        this.props.history.push(`/products/`)
+        // }
+        // const id = this.props.match.params.id
+        // const res = this.props.isUpDateForm ?
+        // await axios.put(`http://localhost:3000/customers/${id}`, this.state) :
+        // this.props.history.push(`/products/`)
     }
  
 
     render() {
-        console.log(this.props.customer)
+        if (this.props.currentCustomer && this.props.currentCustomer.email) {
+            return <CustomerReceipt currentCustomer={this.props.currentCustomer}/>
+        }
         return (
             <div>
                 <h2>{this.props.isUpDateForm ? "Update Customer" : "Create a Customer"}</h2>

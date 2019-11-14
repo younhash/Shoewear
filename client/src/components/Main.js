@@ -64,7 +64,7 @@ class Main extends Component {
                     customersLoaded={this.props.customersLoaded}
                     currentCustomer={this.props.currentCustomer}
                     setCustomer={this.props.setCustomer}
-                    isUpdateForm={true}          
+                    isUpdateForm={false}          
                     {...props}
                   />}
                 />
@@ -81,8 +81,8 @@ class Main extends Component {
                 <Route exact path="/customers/:id" />
                 <Route 
                     exact
-                    path="/customers/CustomerReceipt"
-                    render={(props) => <CustomerReceipt 
+                    path="/customers"
+                    render={(props) => <Customer 
                       getAllCustomers={this.props.getAllCustomers}
                       customers={this.props.customers}
                       customersLoaded={this.props.customersLoaded}
