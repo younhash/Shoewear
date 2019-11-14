@@ -20,10 +20,10 @@ class Header extends Component {
                 <Link exact="true" to="/">
                     <h1>Shoewear</h1>
                 </Link>
-            </Router>
-            <h3>Header</h3>
-            <Router>
-            <Link to={'/customers/new'} > Sign in </Link>
+                <h3>Header</h3>
+
+         
+            <Link exact="true" to="/customers/new/" > Sign in </Link>
             </Router>
           </div>
         )

@@ -33,8 +33,14 @@ class Main extends Component {
                     currentProduct={this.props.currentProduct}
                     setProduct={this.props.setProduct}
                     handleDeleteProduct={this.props.handleDeleteProduct}
+
+                    getAllCustomers={this.props.getAllCustomers}
+                    customers={this.props.customers}
+                    customersLoaded={this.props.customersLoaded}
+                    currentCustomer={this.props.currentCustomer}
+                    setCustomer={this.props.setCustomer}
                     {...props}
-                    />}
+                  />}
                 />
                 <Route
                   exact

@@ -12,7 +12,7 @@ class Customer extends Component {
 
     render() {
         return <div>
-            {/* <CustomerForm /> */}
+            <CustomerForm />
         </div> 
         // return this.props.customers.map(customer => (
         //     <div key={customer.id}>

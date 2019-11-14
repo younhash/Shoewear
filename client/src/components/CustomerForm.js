@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import axios from 'axios'
 
- class CustomerForm extends Component {
+class CustomerForm extends Component {
     state = {
         first_name: '',
         last_name: '',
@@ -47,7 +47,7 @@ import axios from 'axios'
         this.props.setCustomer(customer)
         // <Redirect to="home" />
         this.props.history.push(`/products/`)
-}
+    }
  
 
     render() {
@@ -93,6 +93,6 @@ import axios from 'axios'
             </div>
         )
     }
- }
+}
 
- export default CustomerForm
+export default CustomerForm
