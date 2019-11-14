@@ -7862,3 +7862,233 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 6ms (Views: 0.7ms | ActiveRecord: 2.7ms | Allocations: 750)
 
 
+Started GET "/products/16" for ::1 at 2019-11-13 20:21:54 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (14.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 14.2ms | Allocations: 750)
+
+
+Started GET "/products/16" for ::1 at 2019-11-13 20:22:27 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 750)
+
+
+Started GET "/products/16" for ::1 at 2019-11-13 20:22:48 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 750)
+
+
+Started GET "/products/16" for ::1 at 2019-11-13 20:22:58 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 750)
+
+
+Started GET "/products" for ::1 at 2019-11-13 21:38:55 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 1.0ms | Allocations: 3551)
+
+
+Started GET "/products/9" for ::1 at 2019-11-13 21:39:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 5ms (Views: 1.0ms | ActiveRecord: 0.8ms | Allocations: 777)
+
+
+Started GET "/products/11" for ::1 at 2019-11-13 21:39:13 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 750)
+
+
+Started GET "/products/17" for ::1 at 2019-11-13 21:39:23 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 2.3ms | Allocations: 750)
+
+
+Started POST "/customers/" for ::1 at 2019-11-13 21:39:40 -0500
+Processing by CustomersController#create as HTML
+  Parameters: {"first_name"=>"mhg", "last_name"=>"ytgfd", "email"=>"sakime@ijn.com", "address"=>"123 main st", "customer"=>{"first_name"=>"mhg", "last_name"=>"ytgfd", "email"=>"sakime@ijn.com", "address"=>"123 main st"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[36mCustomer Create (1.5ms)[0m  [1m[32mINSERT INTO "customers" ("first_name", "last_name", "email", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "mhg"], ["last_name", "ytgfd"], ["email", "sakime@ijn.com"], ["address", "123 main st"], ["created_at", "2019-11-14 02:39:41.191134"], ["updated_at", "2019-11-14 02:39:41.191134"]]
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+Completed 201 Created in 819ms (Views: 1.9ms | ActiveRecord: 774.3ms | Allocations: 6656)
+
+
+Started GET "/products/18" for ::1 at 2019-11-13 21:40:51 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProduct Load (5.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 5.6ms | Allocations: 750)
+
+
+Started GET "/products/18" for ::1 at 2019-11-13 21:41:06 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 750)
+
+
+Started GET "/products" for ::1 at 2019-11-13 21:41:10 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.6ms | Allocations: 3476)
+
+
+Started GET "/products/11" for ::1 at 2019-11-13 21:41:18 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (5.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 5.2ms | Allocations: 750)
+
+
+Started GET "/products" for ::1 at 2019-11-14 06:04:19 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (46.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 52ms (Views: 5.9ms | ActiveRecord: 46.0ms | Allocations: 3551)
+
+
+Started GET "/products/13" for ::1 at 2019-11-14 06:04:24 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 776)
+
+
+Started DELETE "/products/13" for ::1 at 2019-11-14 06:04:30 -0500
+Processing by ProductsController#destroy as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (1.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/products_controller.rb:38:in `destroy'
+  [1m[36mProduct Destroy (39.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/products_controller.rb:38:in `destroy'
+  [1m[35m (34.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/products_controller.rb:38:in `destroy'
+Completed 204 No Content in 86ms (ActiveRecord: 75.8ms | Allocations: 2224)
+
+
+Started GET "/products/17" for ::1 at 2019-11-14 06:04:46 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 5ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 750)
+
+
+Started GET "/products/13" for ::1 at 2019-11-14 06:04:56 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (1.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 404 Not Found in 5ms (ActiveRecord: 1.9ms | Allocations: 607)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:44:in `set_product'
+Started GET "/products/13" for ::1 at 2019-11-14 06:06:12 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (1.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 404 Not Found in 15ms (ActiveRecord: 1.4ms | Allocations: 632)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:44:in `set_product'
+Started GET "/products/13" for ::1 at 2019-11-14 06:07:10 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (5.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 404 Not Found in 10ms (ActiveRecord: 5.2ms | Allocations: 601)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:44:in `set_product'
+Started GET "/products/13" for ::1 at 2019-11-14 06:07:15 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (27.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 404 Not Found in 30ms (ActiveRecord: 27.9ms | Allocations: 601)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:44:in `set_product'
+Started GET "/products/13" for ::1 at 2019-11-14 06:07:18 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (32.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 404 Not Found in 34ms (ActiveRecord: 32.1ms | Allocations: 601)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:44:in `set_product'
+Started GET "/products/13" for ::1 at 2019-11-14 06:07:31 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (8.9ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 404 Not Found in 11ms (ActiveRecord: 8.9ms | Allocations: 601)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:44:in `set_product'
+Started GET "/products/17" for ::1 at 2019-11-14 06:09:22 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mProduct Load (36.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 40ms (Views: 0.7ms | ActiveRecord: 36.8ms | Allocations: 756)
+
+
+Started GET "/products" for ::1 at 2019-11-14 06:09:33 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (2.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 2.3ms | Allocations: 3327)
+
+

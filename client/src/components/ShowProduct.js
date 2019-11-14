@@ -27,7 +27,7 @@ class ShowProduct extends Component {
     // await axios.post('http://localhost:3000/orders/' + )
     await axios.delete('http://localhost:3000/products/' +  this.props.currentProduct.id)
     this.props.handleDeleteProduct(this.props.currentProduct)
-    this.props.history.push('/products')
+    this.props.history.push('/CustomerReceipt/')
   }
 
   render() {
@@ -38,14 +38,12 @@ class ShowProduct extends Component {
       <div>
         <h1>{product.name}</h1>
         <img src={product.image} alt={product.name} />
-        {/* <button onClick={this.handleTransaction}><h2>Buy</h2></button> */}
-        {/* <button {!this.props.currentCustomer.hasOwnProperty('id') ? <CustomerForm /> : this.handleTransaction}>Buy</button> */}
-        {!this.props.currentCustomer.hasOwnProperty('id') ? (
+        <button onClick={this.handleTransaction}><h2>Buy</h2></button>
+        {/* {!this.props.currentCustomer.hasOwnProperty('id') ? (
             <button onClick={this.goForm}> Sign up to proceed</button>
         ) : (
             <button onClick={this.handleTransaction}>Buy</button>
-        )
-        }
+        ) */}
       </div>
     )
     }

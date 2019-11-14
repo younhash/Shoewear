@@ -5,6 +5,7 @@ import AllProducts from "./AllProducts";
 import ShowProduct from './ShowProduct';
 import Customer from './Customer';
 import CustomerForm from './CustomerForm';
+import CustomerReceipt from './CustomerReceipt';
 
 
 
@@ -57,9 +58,14 @@ class Main extends Component {
                 <Route
                   exact
                   path="/customers/new"
-                  render={(props) => <CustomerForm 
+                  render={(props) => <CustomerForm
+                    getAllCustomers={this.props.getAllCustomers}
+                    customers={this.props.customers}
+                    customersLoaded={this.props.customersLoaded}
+                    currentCustomer={this.props.currentCustomer}
+                    setCustomer={this.props.setCustomer}
+                    isUpdateForm={true}          
                     {...props}
-                    setCustomer={this.props.setCustomer}             
                   />}
                 />
                 <Route 
@@ -73,6 +79,19 @@ class Main extends Component {
                     />}
                 />
                 <Route exact path="/customers/:id" />
+                <Route 
+                    exact
+                    path="/customers/CustomerReceipt"
+                    render={(props) => <CustomerReceipt 
+                      getAllCustomers={this.props.getAllCustomers}
+                      customers={this.props.customers}
+                      customersLoaded={this.props.customersLoaded}
+                      currentCustomer={this.props.currentCustomer}
+                      setCustomer={this.props.setCustomer}
+                      isUpdateForm={true}          
+                      {...props}
+                    />}
+                />
               </Switch>
             </div>
           </Router>
