@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import axios from 'axios'
 import CustomerReceipt from './CustomerReceipt'
 
+
 class CustomerForm extends Component {
     state = {
         first_name: '',
