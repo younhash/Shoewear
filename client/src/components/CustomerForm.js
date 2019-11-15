@@ -59,15 +59,16 @@ class CustomerForm extends Component {
             return <CustomerReceipt currentCustomer={this.props.currentCustomer}/>
         }
         return (
-            <div>
+            <div class="form-group">
                 <h2>{this.props.isUpDateForm ? "Update Customer" : "Create a Customer"}</h2>
-                <form onSubmit={this.onSubmit}>
+                <form onSubmit={this.onSubmit} >
                 <label>First name:</label>
                 <input 
                     type="text"
                     name="first_name"
                     value={this.state.first_name}
                     onChange={this.handleFormChange}
+                    class="form-control"
                 />
                 <br/>
                 <label>Last name:</label>
@@ -76,6 +77,7 @@ class CustomerForm extends Component {
                     name='last_name'
                     value={this.state.last_name}
                     onChange={this.handleFormChange}
+                    class="form-control form-control-sm" 
                 />
                 <br/>
                 <label>Email:</label>
@@ -84,6 +86,7 @@ class CustomerForm extends Component {
                     name='email'
                     value={this.state.email}
                     onChange={this.handleFormChange}
+                    class="form-control form-control-sm" 
                 />
                 <br/>
                 <label>Address:</label>
@@ -92,6 +95,7 @@ class CustomerForm extends Component {
                     name='address'
                     value={this.state.address}
                     onChange={this.handleFormChange}
+                    class="form-control form-control-sm" 
                 />
                 <br/>
                 <button>Submit</button>
