@@ -35,16 +35,28 @@ class ShowProduct extends Component {
     console.log(product);
     
     return (
-      <div>
-        <h1>{product.name}</h1>
-        <img src={product.image} alt={product.name} />
-        <button onClick={this.handleTransaction}><h1>Buy</h1></button>
-        {/* {!this.props.currentCustomer.hasOwnProperty('id') ? (
+      // <div>
+      //   <h1>{product.name}</h1>
+      //   <img src={product.image} alt={product.name} />
+      //   <button onClick={this.handleTransaction}><h1>Buy</h1></button>
+        /* {!this.props.currentCustomer.hasOwnProperty('id') ? (
             <button onClick={this.goForm}> Sign up to proceed</button>
         ) : (
             <button onClick={this.handleTransaction}>Buy</button>
-        ) */}
+        ) */
+      // </div>
+      <div class="media" style={{backgroundColor: 'black', color: 'white'}}>
+        <img src={product.image} style={{width: '18rem'}} alt={product.name} class="mr-3" />
+        <div class="media-body">
+          <h5 class="mt-0">{product.name}</h5>
+          <p>Color: {product.color}</p>
+          <p>Size: {product.size}</p>
+          <p>Price: ${product.price}</p>
+          <p>{product.name} is the best in town !</p>
+          <br /> <br /> <br />
+        <button onClick={this.handleTransaction}><h1>Buy</h1></button>
       </div>
+    </div>
     )
     }
 }
