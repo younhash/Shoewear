@@ -11815,3 +11815,86 @@ Processing by ProductsController#show as HTML
 Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 750)
 
 
+Started POST "/customers/" for ::1 at 2019-11-17 23:42:58 -0500
+Processing by CustomersController#create as HTML
+  Parameters: {"first_name"=>"Mike", "last_name"=>"Sugar", "email"=>"sakime@ijn.com", "address"=>"123 main st", "customer"=>{"first_name"=>"Mike", "last_name"=>"Sugar", "email"=>"sakime@ijn.com", "address"=>"123 main st"}}
+  [1m[35m (72.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[36mCustomer Create (33.0ms)[0m  [1m[32mINSERT INTO "customers" ("first_name", "last_name", "email", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mike"], ["last_name", "Sugar"], ["email", "sakime@ijn.com"], ["address", "123 main st"], ["created_at", "2019-11-18 04:42:58.284144"], ["updated_at", "2019-11-18 04:42:58.284144"]]
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[35m (44.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+Completed 201 Created in 226ms (Views: 1.4ms | ActiveRecord: 150.5ms | Allocations: 2405)
+
+
+Started POST "/customers/" for ::1 at 2019-11-17 23:47:07 -0500
+Processing by CustomersController#create as HTML
+  Parameters: {"first_name"=>"Mike", "last_name"=>"Sugar", "email"=>"sakime@ijn.com", "address"=>"123 main st", "customer"=>{"first_name"=>"Mike", "last_name"=>"Sugar", "email"=>"sakime@ijn.com", "address"=>"123 main st"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[36mCustomer Create (20.3ms)[0m  [1m[32mINSERT INTO "customers" ("first_name", "last_name", "email", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "Mike"], ["last_name", "Sugar"], ["email", "sakime@ijn.com"], ["address", "123 main st"], ["created_at", "2019-11-18 04:47:07.710453"], ["updated_at", "2019-11-18 04:47:07.710453"]]
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+Completed 201 Created in 27ms (Views: 0.6ms | ActiveRecord: 21.1ms | Allocations: 2402)
+
+
+Started GET "/products" for ::1 at 2019-11-18 09:10:07 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 150ms (Views: 14.4ms | ActiveRecord: 132.2ms | Allocations: 7484)
+
+
+Started GET "/products" for ::1 at 2019-11-18 09:17:23 -0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (2.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 2.5ms | Allocations: 1825)
+
+
+Started GET "/products" for ::1 at 2019-11-18 09:37:39 -0500
+  [1m[35m (31.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 109ms (Views: 34.5ms | ActiveRecord: 71.7ms | Allocations: 7517)
+
+
+Started GET "/products" for ::1 at 2019-11-18 10:51:58 -0500
+  [1m[35m (49.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 97ms (Views: 13.9ms | ActiveRecord: 79.6ms | Allocations: 7484)
+
+
+Started GET "/products/18" for ::1 at 2019-11-18 10:56:02 -0500
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:44:in `set_product'
+Completed 200 OK in 38ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 2375)
+
+
+Started POST "/customers/" for ::1 at 2019-11-18 10:56:49 -0500
+Processing by CustomersController#create as HTML
+  Parameters: {"first_name"=>"steve", "last_name"=>"wo", "email"=>"sakime@ijn.com", "address"=>"123 main st", "customer"=>{"first_name"=>"steve", "last_name"=>"wo", "email"=>"sakime@ijn.com", "address"=>"123 main st"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[36mCustomer Create (0.9ms)[0m  [1m[32mINSERT INTO "customers" ("first_name", "last_name", "email", "address", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["first_name", "steve"], ["last_name", "wo"], ["email", "sakime@ijn.com"], ["address", "123 main st"], ["created_at", "2019-11-18 15:56:49.321896"], ["updated_at", "2019-11-18 15:56:49.321896"]]
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+  [1m[35m (35.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/customers_controller.rb:20:in `create'
+Completed 201 Created in 53ms (Views: 1.2ms | ActiveRecord: 40.5ms | Allocations: 6631)
+
+
+Started GET "/products" for ::1 at 2019-11-18 12:35:27 -0500
+  [1m[35m (29.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (1.0ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/controllers/products_controller.rb:8:in `index'
+Completed 200 OK in 45ms (Views: 35.2ms | ActiveRecord: 6.6ms | Allocations: 7517)
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "Shoewear",
+  "version": "1.0.0",
+  "description": "This is a shoe company where we sell one type of sneaker with different color and sizes.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn --cwd client install && yarn --cwd client build",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/younhash/Shoewear.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

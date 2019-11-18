@@ -31,7 +31,6 @@ class Main extends Component {
                   exact
                   path="/"
                   render={() => (
-                    // <CustomerReceipt date={this.props.date}/>
                     <AllProducts
                       getAllProducts={this.props.getAllProducts}
                       products={this.props.products}
