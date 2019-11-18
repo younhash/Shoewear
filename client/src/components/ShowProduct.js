@@ -17,43 +17,34 @@ class ShowProduct extends Component {
     } 
   }
 
-  goForm = (props) => {
-    this.props.history.push(`/customers/new`)
-  }
+  handleTransaction = async (props) =>{ 
 
-   handleTransaction = async () =>{ 
-    // console.log(this.props.currentCustomer);
-    
+    // No delete for now
     // await axios.post('http://localhost:3000/orders/' + )
     // await axios.delete('http://localhost:3000/products/' +  this.props.currentProduct.id)
     // this.props.handleDeleteProduct(this.props.currentProduct)
     this.props.history.push('/customers/new')
+
+    // Experiment and same one in App.js
+    // if (this.props.currentProduct && this.props.currentProduct.name) {
+    //   return <CustomerForm 
+    //       currentProduct={this.props.currentProduct}  
+    //   />
+    // }
   }
 
-  render() {
-    const product = this.props.currentProduct
-    console.log(product);
-    
+  render() {    
     return (
-      // <div>
-      //   <h1>{product.name}</h1>
-      //   <img src={product.image} alt={product.name} />
-      //   <button onClick={this.handleTransaction}><h1>Buy</h1></button>
-        /* {!this.props.currentCustomer.hasOwnProperty('id') ? (
-            <button onClick={this.goForm}> Sign up to proceed</button>
-        ) : (
-            <button onClick={this.handleTransaction}>Buy</button>
-        ) */
-      // </div>
+    
       <div class="media" style={{backgroundColor: 'black', color: 'white'}}>
-        <img src={product.image} style={{width: '18rem'}} alt={product.name} class="mr-3" />
+        <img src={this.props.currentProduct.image} style={{width: '18rem'}} alt={this.props.currentProduct.name} class="mr-3" />
         <div class="media-body">
-          <h5 class="mt-0">{product.name}</h5>
-          <p>Color: {product.color}</p>
-          <p>Size: {product.size}</p>
-          <p>Price: ${product.price}</p>
-          <p>{product.name} is the best in town !</p>
-          <br /> <br /> <br />
+          <h5 class="mt-0">{this.props.currentProduct.name}</h5>
+          <p>Color: {this.props.currentProduct.color}</p>
+          <p>Size: {this.props.currentProduct.size}</p>
+          <p>Price: ${this.props.currentProduct.price}</p>
+          <p>{this.props.currentProduct.name} is the best in town !</p>
+          <br /> <br />
         <button onClick={this.handleTransaction}><h1>Buy</h1></button>
       </div>
     </div>

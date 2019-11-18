@@ -12,10 +12,17 @@ class Header extends Component {
         // const product = this.props.currentProduct
         // console.log(product);
         return (
-          <div>
-            <h2>Footer</h2>
-            <p>Good bye !</p>
+          <div class="card text-center" style={{width: '100%'}}>
+     
+          <div class="card-body">
+            <p class="card-text">Images from pixabay</p>
+            <a href="#" class="btn btn-">github/younhash</a>
           </div>
+          <div class="card-header">
+            Created by Mohammad @ GA 2009
+          </div>
+
+        </div>
         )
     }
 }

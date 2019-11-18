@@ -31,6 +31,7 @@ class Main extends Component {
                   exact
                   path="/"
                   render={() => (
+                    // <CustomerReceipt date={this.props.date}/>
                     <AllProducts
                       getAllProducts={this.props.getAllProducts}
                       products={this.props.products}
@@ -46,6 +47,7 @@ class Main extends Component {
                     currentProduct={this.props.currentProduct}
                     setProduct={this.props.setProduct}
                     handleDeleteProduct={this.props.handleDeleteProduct}
+                    // handleTransaction={this.props.handleTransaction}                                        
 
                     getAllCustomers={this.props.getAllCustomers}
                     customers={this.props.customers}

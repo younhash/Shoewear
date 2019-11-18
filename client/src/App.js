@@ -7,6 +7,7 @@ import Main from "./components/Main";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import customer from "./components/Customer";
+import CustomerForm from "./components/CustomerForm";
 // import 'bootstrap';
 // import "custom";
 // import "~bootstrap/scss/bootstrap";
@@ -23,8 +24,24 @@ class App extends Component {
       productsLoaded: false,
       customers: [],
       currentCustomer: {},
-      customersLoaded: false
-    };
+      customersLoaded: false,
+      date: ''
+    }
+  }
+
+  componentDidMount() {
+    var that = this;
+    var date = new Date().getDate()
+    var month = new Date().getMonth() + 1
+    var year = new Date().getFullYear()
+    var hours = new Date().getHours()
+    var min = new Date().getMinutes()
+    var sec = new Date().getSeconds()
+    
+    this.setState({
+      date:
+        date + '/' + month + '/' + year + ' ' + hours + ':' + min + ':' + sec,
+    })
   }
  
 
@@ -66,11 +83,25 @@ class App extends Component {
     console.log(customer);
   };
 
+  // handleTransaction = async () =>{ 
+  //   // console.log(this.props.currentCustomer);
+    
+  //     return (
+  //       <div>
+  //         <CustomerForm 
+  //           currentProduct={this.state.currentProduct}  
+  //         />
+  //       </div>
+  //     )
+  // }
+
   render() {
     return (
       <div className="container">
         <Header />
-        <Main 
+        <Main
+          date={this.state.date}
+
           getAllProducts={this.getAllProducts}
           products={this.state.products}
           productsLoaded={this.state.productsLoaded}
@@ -79,6 +110,7 @@ class App extends Component {
           currentProduct={this.state.currentProduct}
           setProduct={this.setProduct}
           handleDeleteProduct={this.handleDeleteProduct}
+          // handleTransaction={this.handleTransaction}
 
           getAllCustomers={this.getAllCustomers}
           customers={this.state.customers}

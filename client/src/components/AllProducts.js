@@ -12,11 +12,7 @@ componentDidMount() {
 render() {
   return this.props.products.map(product => (
       <div  key={product.id} className="card-group">
-        {/* <Link to={`/products/${product.id}`} > Show product </Link>
-        <img alt={product.name} src={product.image} />
-        <p>{product.name}</p> */}
       
-      {/* <div className="card-group"> */}
       <div className="card" style={{width: '18rem'}}>
 
       <img className="card-img-top" src={product.image} alt={product.name} />
@@ -38,7 +34,6 @@ render() {
 
         <hr />
       </div>
-      /* </div> */
     ))
   }
 }

@@ -56,7 +56,12 @@ class CustomerForm extends Component {
 
     render() {
         if (this.props.currentCustomer && this.props.currentCustomer.email) {
-            return <CustomerReceipt currentCustomer={this.props.currentCustomer}/>
+            return <CustomerReceipt 
+                currentCustomer={this.props.currentCustomer}
+                currentProduct={this.props.currentProduct}
+                date={this.props.date}
+        
+        />
         }
         return (
             <div class="form-group">
