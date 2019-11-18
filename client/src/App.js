@@ -46,7 +46,7 @@ class App extends Component {
  
 
   getAllProducts = () => {
-    axios.get("http://localhost:3000/products").then(jsonRes => {
+    axios.get("/products").then(jsonRes => {
       this.setState({
         products: jsonRes.data,
         productsLoaded: true
@@ -55,7 +55,7 @@ class App extends Component {
   };
 
   getAllCustomers = () => {
-    axios.get("http://localhost:3000/customers").then(jsonRes => {
+    axios.get("/customers").then(jsonRes => {
       this.setState({
         customers: jsonRes.data,
         customersLoaded: true

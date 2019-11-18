@@ -18,7 +18,7 @@ class CustomerForm extends Component {
         }
         const id = this.props.match.params.id
         if(this.props.currentCustomer.id !== id) {
-            const res = await axios.get(`http//localhost:3000/customers/${id}`)
+            const res = await axios.get(`/customers/${id}`)
             const { first_name, last_name, email, address} = res.data.customer
             this.setState({
                 first_name,
@@ -42,7 +42,7 @@ class CustomerForm extends Component {
         e.preventDefault()
         // const params = this.props.match && this.props.match.params;
         // if (params) {
-        const res = await axios.post(`http://localhost:3000/customers/`, this.state)
+        const res = await axios.post(`/customers`, this.state)
 
         const customer = res.data
         this.props.setCustomer(customer)

@@ -12,7 +12,7 @@ class ShowProduct extends Component {
   async componentDidMount(){
     const id = this.props.match.params.id
     if (this.props.currentProduct.id !== id){
-      const productData = await axios.get("http://localhost:3000/products/" + id)
+      const productData = await axios.get("/products/" + id)
       this.props.setProduct(productData.data)
     } 
   }
