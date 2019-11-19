@@ -21,11 +21,16 @@ class Main extends Component {
         console.log(this.props.products);
         console.log(this.props.customers);
         return (
+          <Router> 
+
+          <div className="main-class">
+            <div className="product-link">
             <Router>
-            <div className="">
             <Link exact="true" to="/products">
             products
-          </Link>      
+          </Link>
+          </Router>
+          </div>
               <Switch>
                 <Route
                   exact

@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(102, 102, 102);
 }
 
 code {
@@ -16,8 +17,31 @@ code {
   box-sizing: content-box;
 }
 
-.card {
-  display: inline-block;
-  /* width: 200px; */
+div {
+  display: inline;
 }
 
+.products-wrap {
+  float: left;
+  margin: 5px;
+}
+
+.product-link {
+  display: block;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+.media {
+  background-color: rgb(163, 163, 163);
+}
+
+.media img {
+  width: 70%;
+}
+
+.carousel-item .d-block {
+  height: 40%;
+}

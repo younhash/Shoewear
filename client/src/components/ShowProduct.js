@@ -36,8 +36,8 @@ class ShowProduct extends Component {
   render() {    
     return (
     
-      <div class="media" style={{backgroundColor: 'black', color: 'white'}}>
-        <img src={this.props.currentProduct.image} style={{width: '18rem'}} alt={this.props.currentProduct.name} class="mr-3" />
+      <div class="media">
+        <img src={this.props.currentProduct.image} alt={this.props.currentProduct.name} class="mr-3" />
         <div class="media-body">
           <h5 class="mt-0">{this.props.currentProduct.name}</h5>
           <p>Color: {this.props.currentProduct.color}</p>

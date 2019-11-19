@@ -30,13 +30,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    var that = this;
-    var date = new Date().getDate()
-    var month = new Date().getMonth() + 1
-    var year = new Date().getFullYear()
-    var hours = new Date().getHours()
-    var min = new Date().getMinutes()
-    var sec = new Date().getSeconds()
+    const date = new Date().getDate()
+    const month = new Date().getMonth() + 1
+    const year = new Date().getFullYear()
+    const hours = new Date().getHours()
+    const min = new Date().getMinutes()
+    const sec = new Date().getSeconds()
     
     this.setState({
       date:

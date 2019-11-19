@@ -9,7 +9,8 @@ class CustomerForm extends Component {
         first_name: '',
         last_name: '',
         email: '',
-        address: ''
+        address: '',
+        date: ''
     }
     
     async componentDidMount() {
