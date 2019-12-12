@@ -21,6 +21,11 @@ div {
   display: inline;
 }
 
+.main-class {
+  display: flex;
+  flex-flow: wrap;
+}
+
 .products-wrap {
   float: left;
   margin: 5px;
