@@ -33,7 +33,7 @@ class Header extends Component {
                     </div>
 
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/02/12/16/46/shoes-2060519_960_720.jpg" alt="Second slide" />
+                        <img class="d-block w-100" src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1" alt="Second slide" />
                         <div class="carousel-caption d-none d-md-block">
                             <h5>d3</h5>
                             <p>Stay tune..</p>
