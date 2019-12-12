@@ -24,13 +24,13 @@ class Main extends Component {
           <Router> 
 
           <div className="main-class">
-            <div className="product-link">
+            {/* <div className="product-link">
             <Router>
             <Link exact="true" to="/products">
             products
           </Link>
           </Router>
-          </div>
+          </div> */}
               <Switch>
                 <Route
                   exact
