@@ -17,18 +17,15 @@ code {
   box-sizing: content-box;
 }
 
-div {
-  display: inline;
-}
-
 .main-class {
   display: flex;
   flex-flow: wrap;
+  margin: .1em;
 }
 
 .products-wrap {
-  float: left;
-  margin: 5px;
+  margin: auto;
+  padding: .5em;
 }
 
 .product-link {
